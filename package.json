@@ -6,7 +6,8 @@
   "scripts": {
     "start": "nodemon src/index.js",
     "watch": "node-sass --watch src/resources/scss/ --output src/public/css/",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "beautiful":"prettier --single-quote --trailing-comma all --tab-width 4 --write src/**/*.{js,json,scss}"
   },
   "keywords": [
     "tienla"
@@ -20,6 +21,9 @@
     "node-sass": "^7.0.3"
   },
   "devDependencies": {
-    "nodemon": "^2.0.20"
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.7.1"
   }
 }
